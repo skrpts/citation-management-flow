@@ -1,0 +1,43 @@
+# --- Identity ---
+name: "citation-management-flow"
+display_name: "Citation Management Flow"
+description: "Citation tracking, formatting, and bibliography generation for academic writing"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/citation-management-flow"
+
+# --- Discovery (Hub) ---
+category: "researcher"
+tags:
+  - "citations"
+  - "bibliography"
+  - "academic-writing"
+  - "referencing"
+  - "research"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "academic-sources"
+    - "bibliographic-data"
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 12
