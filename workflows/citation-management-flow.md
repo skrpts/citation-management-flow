@@ -19,7 +19,7 @@ connections:
     type: uses
   - target: citation-gap-analyser
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: citation-style-reference
     type: references
@@ -95,3 +95,46 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 - If the manuscript uses inconsistent citation formatting (mixing styles), identify the dominant style and flag all deviations
 - If DOIs do not resolve, retain them but flag for verification — they may contain transcription errors
 - If the gap analysis identifies more than 10 critical gaps, prioritise by severity and recommend addressing the top 5 before submission
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.source_materials}}` | Yes | The sources or source metadata you want to catalogue and cite | `PDFs, URLs, DOI list, or bibliography export` |
+| `{{input.target_citation_style}}` | Yes | The citation format you need to produce | `APA 7th edition` |
+| `{{input.manuscript_text}}` | No | Draft manuscript text to validate in-text citations against | `Paste your draft introduction and literature review` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Complete source catalogue | Complete source catalogue with standardised metadata for all sources |
+| Formatted citations in the target style — both in-text and reference list forms for each source | Formatted citations in the target style — both in-text and reference list forms for each source |
+| Validation report listing: matched citations, orphaned in-text citations , unused bibliography entries , and formatting errors | Validation report listing: matched citations, orphaned in-text citations , unused bibliography entries , and formatting errors |
+| Complete, publication-ready bibliography in the target citation style | Complete, publication-ready bibliography in the target citation style |
+| Gap analysis report covering: under-cited claims, over-reliance on single sources, temporal coverage gaps, geographic or methodological diversity gaps, and missing seminal works | Gap analysis report covering: under-cited claims, over-reliance on single sources, temporal coverage gaps, geographic or methodological diversity gaps, and missing seminal works |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Source Materials: "PDFs, URLs, DOI list, or bibliography export"
+Target Citation Style: "APA 7th edition"
+Manuscript Text: "Paste your draft introduction and literature review"
+```
+

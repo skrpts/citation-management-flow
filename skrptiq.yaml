@@ -24,8 +24,7 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services:
-    - "anthropic-claude"
+  services: []
   permissions: []
   data_handling:
     - "academic-sources"

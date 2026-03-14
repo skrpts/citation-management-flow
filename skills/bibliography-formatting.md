@@ -5,7 +5,7 @@ title: Bibliography Formatting
 description: "Formats citations and bibliographies according to major academic referencing styles"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: citation-style-reference
     type: references

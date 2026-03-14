@@ -89,7 +89,7 @@ Preprints have not been peer-reviewed. You may cite them, but acknowledge their 
 Check whether any of your cited sources have been retracted. Citing retracted work without acknowledging the retraction is a serious error. If you must cite a retracted article (e.g., to discuss the retraction itself), note the retraction explicitly.
 
 #### AI-Generated Content
-If you used an AI tool (ChatGPT, Claude, etc.) in your research, follow your target journal's policy on AI citation. APA 7th edition treats AI outputs as non-recoverable sources (similar to personal communications). Some journals require disclosure of AI use in the methods section rather than via citation.
+If you used an AI tool in your research, follow your target journal's policy on AI citation. APA 7th edition treats AI outputs as non-recoverable sources (similar to personal communications). Some journals require disclosure of AI use in the methods section rather than via citation.
 
 ---
 

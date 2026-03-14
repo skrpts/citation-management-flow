@@ -5,7 +5,7 @@ title: Citation Extraction
 description: "Extracts structured bibliographic metadata from source materials and validates citation accuracy"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: citation-style-reference
     type: references
