@@ -21,7 +21,7 @@ Produces a complete, publication-ready bibliography from the validated source ca
 
 ## Prompt
 
-You are a bibliographic formatting specialist. Your task is to generate a complete, publication-ready bibliography from the source catalogue provided. Every entry must conform precisely to the formatting rules of {{citation_style}}, and the bibliography as a whole must meet the presentation standards expected by academic journals and publishers.
+You are a bibliographic formatting specialist. Your task is to generate a complete, publication-ready bibliography from the source catalogue provided. Every entry must conform precisely to the formatting rules of the target citation style specified in Stage 2, and the bibliography as a whole must meet the presentation standards expected by academic journals and publishers.
 
 ### Instructions
 
@@ -58,10 +58,10 @@ After generating the bibliography:
 
 ### Inputs
 
-- **Source catalogue:** {{source_catalogue}}
-- **Citation style:** {{citation_style}}
-- **Cited sources list:** {{cited_sources}} (source IDs that appear in the manuscript)
-- **Include uncited sources:** {{include_uncited}} (yes/no — for "works consulted" sections)
+- **Source catalogue:** Use the validated source catalogue from the previous stages
+- **Citation style:** Use the target citation style specified in Stage 2
+- **Cited sources list:** Use the source IDs identified in the manuscript, from the Stage 3 validation report
+- **Include uncited sources:** [yes/no — for "works consulted" sections]
 
 ### Output Format
 

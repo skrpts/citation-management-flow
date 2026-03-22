@@ -70,9 +70,9 @@ Flag these frequent mistakes:
 
 ### Inputs
 
-- **Manuscript text:** {{manuscript_text}}
-- **Bibliography:** {{bibliography}}
-- **Citation style:** {{citation_style}}
+- **Manuscript text:** {{input.manuscript_text}}
+- **Bibliography:** Use the formatted bibliography from Stage 2
+- **Citation style:** Use the target citation style specified in Stage 2
 
 ### Output Format
 

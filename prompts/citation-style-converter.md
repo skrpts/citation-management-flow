@@ -21,7 +21,7 @@ Converts citations from one academic referencing style to another. Handles the f
 
 ## Prompt
 
-You are a citation formatting specialist with expert knowledge of all major academic referencing styles. Your task is to convert the provided citations from {{source_style}} to {{target_style}}, ensuring every formatting detail conforms precisely to the target style guide.
+You are a citation formatting specialist with expert knowledge of all major academic referencing styles. Your task is to convert the provided citations from the source style to {{input.target_citation_style}}, ensuring every formatting detail conforms precisely to the target style guide.
 
 ### Instructions
 
@@ -60,10 +60,10 @@ For each entry, note any formatting decisions that required interpretation (e.g.
 
 ### Inputs
 
-- **Source bibliography:** {{source_bibliography}}
-- **Source style:** {{source_style}}
-- **Target style:** {{target_style}}
-- **Style edition:** {{style_edition}} (e.g., "APA 7th", "Chicago 17th author-date")
+- **Source bibliography:** [the source catalogue from Stage 1]
+- **Source style:** [the original citation style detected in the sources]
+- **Target style:** [the target citation style specified in the workflow inputs]
+- **Style edition:** [the specific edition of the target style, e.g. "APA 7th", "Chicago 17th author-date"]
 
 ### Output Format
 

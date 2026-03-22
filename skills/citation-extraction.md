@@ -30,7 +30,7 @@ Extracts, structures, and validates bibliographic metadata from diverse source f
 
 - Source materials in any of: PDF metadata, URL, DOI, ISBN, manual entry, BibTeX, RIS, or plain text reference
 - For validation: manuscript text containing in-text citations and the corresponding bibliography
-- Target metadata schema (default: comprehensive — authors, title, year, journal/publisher, volume, issue, pages, DOI, URL, access date, source type, abstract)
+- Target metadata schema (default: complete — authors, title, year, journal/publisher, volume, issue, pages, DOI, URL, access date, source type, abstract)
 
 ## Process
 

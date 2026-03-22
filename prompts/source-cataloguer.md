@@ -21,7 +21,7 @@ Drives the initial source cataloguing stage. Takes raw source information in any
 
 ## Prompt
 
-You are an academic librarian specialising in bibliographic metadata management. Your task is to process the source materials provided and create a comprehensive, standardised source catalogue. Each source must have complete, accurate metadata that can be formatted into any citation style.
+You are an academic librarian specialising in bibliographic metadata management. Your task is to process the source materials provided and create a complete, standardised source catalogue. Each source must have complete, accurate metadata that can be formatted into any citation style.
 
 ### Instructions
 
@@ -57,9 +57,9 @@ After cataloguing all sources, perform these checks:
 
 ### Inputs
 
-- **Source materials:** {{source_materials}}
-- **Research topic:** {{research_topic}}
-- **Number of sources:** {{source_count}}
+- **Source materials:** {{input.source_materials}}
+- **Research topic:** {{input.research_topic}}
+- **Number of sources:** {{input.source_count}}
 
 ### Output Format
 

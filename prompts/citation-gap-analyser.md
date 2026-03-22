@@ -15,7 +15,7 @@ metadata:
 
 ## Purpose
 
-Analyses the citation landscape of a manuscript to identify weaknesses in source coverage. This is the final quality check in the citation management flow, ensuring that the manuscript's evidence base is comprehensive, balanced, and credible.
+Analyses the citation landscape of a manuscript to identify weaknesses in source coverage. This is the final quality check in the citation management flow, ensuring that the manuscript's evidence base is thorough, balanced, and credible.
 
 ## Prompt
 
@@ -66,10 +66,10 @@ For each identified gap, provide:
 
 ### Inputs
 
-- **Manuscript text:** {{manuscript_text}}
-- **Source catalogue:** {{source_catalogue}}
-- **Research field:** {{research_field}}
-- **Manuscript authors:** {{manuscript_authors}} (for self-citation analysis)
+- **Manuscript text:** Use the manuscript text provided in Stage 3
+- **Source catalogue:** Use the source catalogue from Stage 1
+- **Research field:** {{input.research_field}}
+- **Manuscript authors:** {{input.manuscript_authors}} (for self-citation analysis)
 
 ### Output Format
 

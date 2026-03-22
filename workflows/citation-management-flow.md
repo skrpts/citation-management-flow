@@ -34,7 +34,7 @@ metadata:
 
 ## Overview
 
-This workflow manages the complete citation lifecycle for academic writing projects. It takes researchers from initial source cataloguing through citation formatting, validation, and bibliography generation, with a final gap analysis to ensure comprehensive and balanced source coverage. The flow supports all major citation styles and can process sources at any stage of the writing process — from early literature collection through to final manuscript preparation.
+This workflow manages the complete citation lifecycle for academic writing projects. It takes researchers from initial source cataloguing through citation formatting, validation, and bibliography generation, with a final gap analysis to ensure thorough and balanced source coverage. The flow supports all major citation styles and can process sources at any stage of the writing process — from early literature collection through to final manuscript preparation.
 
 ## Pipeline Stages
 
@@ -103,6 +103,10 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 | `{{input.source_materials}}` | Yes | The sources or source metadata you want to catalogue and cite | `PDFs, URLs, DOI list, or bibliography export` |
 | `{{input.target_citation_style}}` | Yes | The citation format you need to produce | `APA 7th edition` |
 | `{{input.manuscript_text}}` | No | Draft manuscript text to validate in-text citations against | `Paste your draft introduction and literature review` |
+| `{{input.research_topic}}` | No | The research topic these sources relate to | `Impact of social media on adolescent mental health` |
+| `{{input.source_count}}` | No | Approximate number of sources to catalogue | `25` |
+| `{{input.research_field}}` | No | The academic field or discipline of the manuscript | `Psychology` |
+| `{{input.manuscript_authors}}` | No | Names of the manuscript authors for self-citation analysis | `Smith, J. and Jones, A.` |
 
 ## Outputs
 

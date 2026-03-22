@@ -64,7 +64,7 @@ A source appears in the bibliography but is never cited in the manuscript text. 
 Failing to cite a source that directly influenced your work. This can occur innocently (you forgot you read it) or less innocently (you want your work to appear more original). Either way, it is problematic. Keep systematic notes of everything you read.
 
 #### Citation Padding
-Adding citations that you have not read to make your bibliography appear more comprehensive. This is detectable (reviewers will check) and constitutes academic dishonesty. Quality over quantity.
+Adding citations that you have not read to make your bibliography appear more thorough. This is detectable (reviewers will check) and constitutes academic dishonesty. Quality over quantity.
 
 #### String Citations
 Packing multiple citations into a single parenthetical without indicating which source supports which specific claim: "(Smith, 2020; Jones, 2021; Brown, 2022; Lee, 2023)." If all four sources support the same specific point, this is acceptable. If they support different aspects of a broader claim, separate the citations and attribute each to its specific sub-claim.

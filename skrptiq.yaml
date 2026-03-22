@@ -2,7 +2,7 @@
 name: "citation-management-flow"
 display_name: "Citation Management Flow"
 description: "Citation tracking, formatting, and bibliography generation for academic writing"
-version: "1.0.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
