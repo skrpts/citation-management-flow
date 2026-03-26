@@ -71,8 +71,8 @@ Flag these frequent mistakes:
 ### Inputs
 
 - **Manuscript text:** {{input.manuscript_text}}
-- **Bibliography:** Use the formatted bibliography from Stage 2
-- **Citation style:** Use the target citation style specified in Stage 2
+- **Bibliography:** {{steps.citation-style-converter.output}}
+- **Citation style:** {{input.target_citation_style}}
 
 ### Output Format
 

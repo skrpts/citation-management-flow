@@ -66,8 +66,8 @@ For each identified gap, provide:
 
 ### Inputs
 
-- **Manuscript text:** Use the manuscript text provided in Stage 3
-- **Source catalogue:** Use the source catalogue from Stage 1
+- **Manuscript text:** {{input.manuscript_text}}
+- **Source catalogue:** {{steps.source-cataloguer.output}}
 - **Research field:** {{input.research_field}}
 - **Manuscript authors:** {{input.manuscript_authors}} (for self-citation analysis)
 

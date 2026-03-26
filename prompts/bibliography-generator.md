@@ -58,9 +58,9 @@ After generating the bibliography:
 
 ### Inputs
 
-- **Source catalogue:** Use the validated source catalogue from the previous stages
-- **Citation style:** Use the target citation style specified in Stage 2
-- **Cited sources list:** Use the source IDs identified in the manuscript, from the Stage 3 validation report
+- **Source catalogue:** {{steps.source-cataloguer.output}}
+- **Citation style:** {{input.target_citation_style}}
+- **Cited sources list:** {{steps.in-text-citation-checker.output}}
 - **Include uncited sources:** [yes/no — for "works consulted" sections]
 
 ### Output Format

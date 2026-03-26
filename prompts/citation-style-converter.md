@@ -60,10 +60,10 @@ For each entry, note any formatting decisions that required interpretation (e.g.
 
 ### Inputs
 
-- **Source bibliography:** [the source catalogue from Stage 1]
-- **Source style:** [the original citation style detected in the sources]
-- **Target style:** [the target citation style specified in the workflow inputs]
-- **Style edition:** [the specific edition of the target style, e.g. "APA 7th", "Chicago 17th author-date"]
+- **Source bibliography:** {{steps.source-cataloguer.output}}
+- **Source style:** Detect the original citation style from the source catalogue
+- **Target style:** {{input.target_citation_style}}
+- **Style edition:** Determine the specific edition from the target citation style (e.g. "APA 7th", "Chicago 17th author-date")
 
 ### Output Format
 
