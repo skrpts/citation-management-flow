@@ -24,9 +24,12 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
-  permissions: []
+  services:
+    - "llm-service"
+  permissions:
+    - "network:doi.org"
   data_handling:
+    - "pii"
     - "academic-sources"
     - "bibliographic-data"
 
