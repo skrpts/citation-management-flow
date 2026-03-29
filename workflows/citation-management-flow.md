@@ -3,7 +3,7 @@ type: workflow
 id: citation-management-flow
 title: Citation Management Flow
 description: "End-to-end citation tracking, formatting, and bibliography generation for academic writing"
-tags: [Production, Tested]
+tags: [Production, Tested, writing:academic, research:citations]
 connections:
   - target: citation-extraction
     type: uses

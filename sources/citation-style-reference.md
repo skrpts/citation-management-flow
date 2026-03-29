@@ -3,7 +3,7 @@ type: source
 id: citation-style-reference
 title: Citation Style Reference
 description: "Quick reference guide to major citation styles — APA, MLA, Chicago, Harvard, IEEE"
-tags: [Production, Customer-Facing]
+tags: [Production, Customer-Facing, research:citations, utility:formatting]
 connections: []
 metadata:
   source_type: reference

@@ -3,7 +3,7 @@ type: prompt
 id: citation-gap-analyser
 title: Citation Gap Analyser
 description: "Identifies gaps in source coverage and citation balance"
-tags: [Production]
+tags: [Production, analysis:risk, research:citations]
 connections:
   - target: citation-extraction
     type: derived_from

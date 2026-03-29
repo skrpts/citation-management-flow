@@ -3,7 +3,7 @@ type: prompt
 id: in-text-citation-checker
 title: In-Text Citation Checker
 description: "Validates in-text citations against the bibliography and checks formatting consistency"
-tags: [Production]
+tags: [Production, research:citations, utility:formatting]
 connections:
   - target: citation-extraction
     type: derived_from
