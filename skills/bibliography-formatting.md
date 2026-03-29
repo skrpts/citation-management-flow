@@ -3,7 +3,7 @@ type: skill
 id: bibliography-formatting
 title: Bibliography Formatting
 description: "Formats citations and bibliographies according to major academic referencing styles"
-tags: [Production, Tested, research:citations, utility:formatting]
+tags: [Production, Tested, Academic, Citations]
 connections:
   - target: llm-service
     type: runs_on

@@ -3,7 +3,7 @@ type: prompt
 id: citation-style-converter
 title: Citation Style Converter
 description: "Converts citations between major academic referencing styles"
-tags: [Production, research:citations, utility:formatting]
+tags: [Production, Academic, Citations]
 connections:
   - target: bibliography-formatting
     type: derived_from

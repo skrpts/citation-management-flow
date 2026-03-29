@@ -3,7 +3,7 @@ type: prompt
 id: source-cataloguer
 title: Source Cataloguer
 description: "Catalogues sources with full bibliographic metadata in a standardised format"
-tags: [Production, analysis:source, research:citations]
+tags: [Production, Citations, Research]
 connections:
   - target: citation-extraction
     type: derived_from

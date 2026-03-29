@@ -3,7 +3,7 @@ type: document
 id: citation-best-practices
 title: Citation Best Practices
 description: "Guide to citation ethics, best practices, and common pitfalls in academic writing"
-tags: [Production, Customer-Facing, writing:academic, research:citations]
+tags: [Production, Customer-Facing, Academic, Citations, Writing]
 connections:
   - target: citation-extraction
     type: references

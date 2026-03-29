@@ -3,7 +3,7 @@ type: prompt
 id: bibliography-generator
 title: Bibliography Generator
 description: "Generates a formatted bibliography from the source catalogue"
-tags: [Production, analysis:source, research:citations]
+tags: [Production, Citations, Research]
 connections:
   - target: bibliography-formatting
     type: derived_from

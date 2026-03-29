@@ -3,7 +3,7 @@ type: asset
 id: source-catalogue-template
 title: Source Catalogue Template
 description: "Structured template for cataloguing research sources with full bibliographic metadata"
-tags: [Production, Customer-Facing, analysis:source, research:citations]
+tags: [Production, Customer-Facing, Citations, Research]
 connections:
   - target: source-cataloguer
     type: references
