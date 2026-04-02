@@ -3,7 +3,7 @@ id: "82ddc915-9260-41e7-aa77-b0422845a3b6"
 name: "citation-management-flow"
 display_name: "Citation Management Flow"
 description: "Citation tracking, formatting, and bibliography generation for academic writing"
-version: "1.0.2"
+version: "1.0.3"
 engine: ">=1.0.0"
 
 # --- Attribution ---

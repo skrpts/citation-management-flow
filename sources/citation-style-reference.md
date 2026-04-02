@@ -17,7 +17,7 @@ metadata:
 **Used in:** Psychology, education, social sciences, nursing, business
 
 **Reference list entry (journal article):**
-Author, A. A., & Author, B. B. (Year). Title of article in sentence case. *Title of Journal in Title Case and Italics*, *Volume*(Issue), Page-Page. https://doi.org/xxxxx
+Author, A. A., & Author, B. B. (Year). Title of article in sentence case. *Title of Journal in Title Case and Italics*, *Volume*(Issue), Page-Page. `https://doi.org/xxxxx`
 
 **In-text (parenthetical):** (Author, Year) or (Author, Year, p. X) for direct quotes
 **In-text (narrative):** Author (Year) states that...
@@ -30,7 +30,7 @@ Author, A. A., & Author, B. B. (Year). Title of article in sentence case. *Title
 - Sentence case for article and book titles (capitalise only first word, first word after colon, proper nouns)
 - Title case and italics for journal names
 - Italicise volume numbers
-- DOI as hyperlink: https://doi.org/xxxxx
+- DOI as hyperlink: `https://doi.org/xxxxx`
 - Hanging indent: 1.27 cm (0.5 in)
 - Double-spaced
 
@@ -65,7 +65,7 @@ Author Last, First. "Title of Article in Title Case." *Title of Journal*, vol. X
 **Used in:** Sciences, social sciences (author-date variant)
 
 **Reference list entry (journal article):**
-Author Last, First, and First Last. Year. "Title of Article in Title Case." *Journal Title* Volume (Issue): Pages. https://doi.org/xxxxx.
+Author Last, First, and First Last. Year. "Title of Article in Title Case." *Journal Title* Volume (Issue): Pages. `https://doi.org/xxxxx.`
 
 **In-text (parenthetical):** (Author Year, Page)
 **In-text (narrative):** Author (Year, Page) argues that...
@@ -80,13 +80,13 @@ Author Last, First, and First Last. Year. "Title of Article in Title Case." *Jou
 **Used in:** History, arts, some humanities
 
 **Footnote (first citation):**
-1. First Last and First Last, "Article Title," *Journal Title* Volume, no. Issue (Year): Pages, https://doi.org/xxxxx.
+1. First Last and First Last, "Article Title," *Journal Title* Volume, no. Issue (Year): Pages, `https://doi.org/xxxxx.`
 
 **Footnote (subsequent):**
 2. Last, "Shortened Title," Page.
 
 **Bibliography entry:**
-Last, First, and First Last. "Article Title." *Journal Title* Volume, no. Issue (Year): Pages. https://doi.org/xxxxx.
+Last, First, and First Last. "Article Title." *Journal Title* Volume, no. Issue (Year): Pages. `https://doi.org/xxxxx.`
 
 **Ordering:** Bibliography: alphabetical. Notes: sequential by appearance.
 **Heading:** Bibliography
@@ -110,7 +110,7 @@ Author, A.A. and Author, B.B. (Year) 'Title of article in sentence case', *Journ
 - Article titles in single quotation marks (some variants use no quotation marks)
 - Sentence case for article titles
 - "pp." for page ranges
-- "doi:" prefix (not https://doi.org/)
+- "doi:" prefix (not `https://doi.org/`)
 - Note: Harvard is not a single standard — conventions vary by institution. Always check your institution's specific guide.
 
 ---
