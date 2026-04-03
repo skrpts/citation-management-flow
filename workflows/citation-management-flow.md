@@ -19,8 +19,6 @@ connections:
     type: uses
   - target: bibliography-generator
     type: uses
-  - target: citation-gap-analyser
-    type: uses
   - target: summarise-source
     type: uses
   - target: llm-service
