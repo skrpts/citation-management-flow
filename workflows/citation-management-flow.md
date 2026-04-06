@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
-  - target: source-cataloguer
-    type: uses
-  - target: citation-style-converter
-    type: uses
-  - target: in-text-citation-checker
-    type: uses
-  - target: bibliography-generator
-    type: uses
-  - target: summarise-source
-    type: uses
   - target: llm-service
     type: runs_on
   - target: citation-style-reference
