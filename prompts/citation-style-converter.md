@@ -60,7 +60,7 @@ For each entry, note any formatting decisions that required interpretation (e.g.
 
 ### Inputs
 
-- **Source bibliography:** {{steps.source-cataloguer.output}}
+- **Source bibliography:** {{steps.Citation Extraction.output}}
 - **Source style:** Detect the original citation style from the source catalogue
 - **Target style:** {{input.target_citation_style}}
 - **Style edition:** Determine the specific edition from the target citation style (e.g. "APA 7th", "Chicago 17th author-date")

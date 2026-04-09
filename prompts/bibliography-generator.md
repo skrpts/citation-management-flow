@@ -58,9 +58,9 @@ After generating the bibliography:
 
 ### Inputs
 
-- **Source catalogue:** {{steps.source-cataloguer.output}}
+- **Source catalogue:** {{steps.Citation Extraction.output}}
 - **Citation style:** {{input.target_citation_style}}
-- **Cited sources list:** {{steps.in-text-citation-checker.output}}
+- **Cited sources list:** {{steps.Citation Extraction.output}}
 - **Include uncited sources:** [yes/no — for "works consulted" sections]
 
 ### Output Format

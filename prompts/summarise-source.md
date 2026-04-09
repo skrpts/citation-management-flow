@@ -31,7 +31,7 @@ You are a research assistant. Read the academic paper below and produce a struct
 
 ### Inputs
 
-- **Paper text:** {{steps.search-literature.output}}
+- **Paper text:** {{steps.Search Literature.output}}
 - **Reviewer's research question:** {{input.research_question}}
 - **Summary format** — the requested output structure (e.g. narrative, tabular, or annotated bibliography)
 

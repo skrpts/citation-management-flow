@@ -71,7 +71,7 @@ Flag these frequent mistakes:
 ### Inputs
 
 - **Manuscript text:** {{input.manuscript_text}}
-- **Bibliography:** {{steps.citation-style-converter.output}}
+- **Bibliography:** {{steps.Bibliography Formatting.output}}
 - **Citation style:** {{input.target_citation_style}}
 
 ### Output Format
