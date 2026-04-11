@@ -4,6 +4,19 @@ id: in-text-citation-checker
 title: In-Text Citation Checker
 description: "Validates in-text citations against the bibliography and checks formatting consistency"
 tags: [Production, Citations, Research]
+inputs:
+  manuscript_text:
+    label: "Manuscript Text"
+    description: "The full manuscript text"
+    example: "[Paste the complete manuscript here]"
+    required: true
+    type: text
+  target_citation_style:
+    label: "Citation Style"
+    description: "The target citation format for references"
+    example: "Harvard"
+    required: true
+    type: text
 connections:
   - target: citation-extraction
     type: derived_from

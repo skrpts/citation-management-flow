@@ -4,6 +4,13 @@ id: citation-style-converter
 title: Citation Style Converter
 description: "Converts citations between major academic referencing styles"
 tags: [Production, Academic, Citations]
+inputs:
+  target_citation_style:
+    label: "Citation Style"
+    description: "The target citation format for references"
+    example: "Harvard"
+    required: true
+    type: text
 connections:
   - target: bibliography-formatting
     type: derived_from

@@ -4,6 +4,25 @@ id: source-cataloguer
 title: Source Cataloguer
 description: "Catalogues sources with full bibliographic metadata in a standardised format"
 tags: [Production, Citations, Research]
+inputs:
+  source_materials:
+    label: "Source Materials"
+    description: "The source documents or materials to work with"
+    example: "[Paste or describe the source materials]"
+    required: true
+    type: text
+  research_topic:
+    label: "Research Topic"
+    description: "The research area or question to investigate"
+    example: "Machine learning applications in early disease detection"
+    required: true
+    type: text
+  source_count:
+    label: "Number of Sources"
+    description: "How many sources to find or include"
+    example: "10"
+    required: true
+    type: text
 connections:
   - target: citation-extraction
     type: derived_from

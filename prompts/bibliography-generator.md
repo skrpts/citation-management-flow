@@ -4,6 +4,13 @@ id: bibliography-generator
 title: Bibliography Generator
 description: "Generates a formatted bibliography from the source catalogue"
 tags: [Production, Citations, Research]
+inputs:
+  target_citation_style:
+    label: "Citation Style"
+    description: "The target citation format for references"
+    example: "Harvard"
+    required: true
+    type: text
 connections:
   - target: bibliography-formatting
     type: derived_from
