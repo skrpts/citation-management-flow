@@ -22,6 +22,15 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
+execution:
+  - skill: "citation-extraction"
+    step_type: "synthesis"
+  - skill: "bibliography-formatting"
+    input_from: "citation-extraction"
+    step_type: "synthesis"
+  - skill: "source-summarisation"
+    input_from: "bibliography-formatting"
+    step_type: "synthesis"
 ---
 
 ## Overview
