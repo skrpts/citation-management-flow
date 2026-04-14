@@ -22,6 +22,12 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
+output_step: "source-catalogue-template"
+composite_steps:
+  - "citation-extraction"
+  - "bibliography-formatting"
+  - "source-summarisation"
+  - "source-catalogue-template"
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
