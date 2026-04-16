@@ -3,7 +3,7 @@ id: "82ddc915-9260-41e7-aa77-b0422845a3b6"
 name: "citation-management-flow"
 display_name: "Citation Management Flow"
 description: "Citation tracking, formatting, and bibliography generation for academic writing"
-version: "1.1.9"
+version: "1.1.10"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -36,11 +36,11 @@ requires:
 
 # --- Contents ---
 contents:
-  skills: 3
-  prompts: 6
+  skills: 4
+  prompts: 7
   workflows: 1
   services: 1
   sources: 3
   documents: 1
   assets: 2
-  total: 17
+  total: 19

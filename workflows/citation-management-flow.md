@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: citation-style-reference
@@ -22,12 +24,13 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
-output_step: "source-catalogue-template"
+output_step: "language-polish"
 composite_steps:
   - "citation-extraction"
   - "bibliography-formatting"
   - "source-summarisation"
   - "source-catalogue-template"
+  - "language-polish"
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
@@ -37,6 +40,8 @@ execution:
     step_type: "synthesis"
   - skill: "source-summarisation"
     step_type: "synthesis"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
