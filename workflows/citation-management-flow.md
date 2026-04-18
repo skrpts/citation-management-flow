@@ -34,10 +34,12 @@ composite_steps:
 execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
+    prompt: "source-cataloguer"
     context:
       citation_style: "Harvard"
   - skill: "bibliography-formatting"
     step_type: "synthesis"
+    prompt: "citation-style-converter"
   - skill: "source-summarisation"
     step_type: "synthesis"
   - skill: "language-polish"

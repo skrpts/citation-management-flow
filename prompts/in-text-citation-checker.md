@@ -10,7 +10,8 @@ inputs:
     description: "The full manuscript text"
     example: "[Paste the complete manuscript here]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
   target_citation_style:
     label: "Citation Style"
     description: "The target citation format for references"

@@ -10,7 +10,8 @@ inputs:
     description: "The source documents or materials to work with"
     example: "[Paste or describe the source materials]"
     required: true
-    type: text
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
   research_topic:
     label: "Research Topic"
     description: "The research area or question to investigate"
