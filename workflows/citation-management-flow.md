@@ -41,8 +41,10 @@ execution:
     step_type: "synthesis"
     prompt: "citation-style-converter"
   - skill: "source-summarisation"
+    prompt: "summarise-source"
     step_type: "synthesis"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
