@@ -3,7 +3,7 @@ id: "82ddc915-9260-41e7-aa77-b0422845a3b6"
 name: "citation-management-flow"
 display_name: "Citation Management Flow"
 description: "Citation tracking, formatting, and bibliography generation for academic writing"
-version: "1.1.20"
+version: "1.1.21"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -17,9 +17,9 @@ repository: "https://github.com/skrpts/citation-management-flow"
 # --- Discovery (Hub) ---
 category: "researcher"
 tags:
-  - "citations"
-  - "bibliography"
   - "academic-writing"
+  - "bibliography"
+  - "citations"
   - "referencing"
   - "research"
 
