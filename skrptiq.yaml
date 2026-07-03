@@ -3,7 +3,7 @@ id: "82ddc915-9260-41e7-aa77-b0422845a3b6"
 name: "citation-management-flow"
 display_name: "Citation Management Flow"
 description: "Citation tracking, formatting, and bibliography generation for academic writing"
-version: "1.1.23"
+version: "1.1.24"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -59,8 +59,8 @@ dependencies:
     checksum: "sha256:207d8baab60f987569e8d15089aabc696f57dc04806ba3b688337f76a8f3cb01"
   - id: "e21eac70-ca54-48b3-a20e-71dddfb026c8"
     name: "summarise-source"
-    version: 1.0.1
-    checksum: "sha256:0a886329ec48aaa0c4c65db273b8323f074487d789fd1edc2f8870165a8c23c3"
+    version: 1.0.3
+    checksum: "sha256:9d7ef736ea802fe9c12863cfd15a4ad929fef8891c4a06623fac0fd572017cf1"
 
 requires:
   services:
@@ -82,3 +82,17 @@ contents:
   documents: 1
   assets: 1
   total: 10
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T10:59:31.312Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: ["network:doi.org"]
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/citation-management-flow/security"

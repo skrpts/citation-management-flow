@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.24
+GH#749 Phase 2 — supply summarise-source via `bindings: source_text { from_input: source_materials }` (#750/#752) and re-pin the dep to v1.0.3 (position-safe), fixing the previously-dangling {{steps.Literature Search.output}} ref. Also declare per-step `output: {name,type}` (GH#745, deferred until #749). Canonical scan clean.
+
 ## v1.1.23
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 9 inline shared-content files and declare 9 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

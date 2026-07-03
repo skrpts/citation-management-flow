@@ -35,14 +35,20 @@ execution:
   - skill: "citation-extraction"
     step_type: "synthesis"
     prompt: "source-cataloguer"
+    output: { name: "source_catalogue", type: "list" }
     context:
       citation_style: "Harvard"
   - skill: "bibliography-formatting"
     step_type: "synthesis"
     prompt: "citation-style-converter"
+    output: { name: "bibliography", type: "text" }
   - skill: "source-summarisation"
     prompt: "summarise-source"
     step_type: "synthesis"
+    output: { name: "summaries", type: "text" }
+    bindings:
+      source_text:
+        from_input: "source_materials"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
