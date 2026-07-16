@@ -1,7 +1,7 @@
 ---
 type: asset
 id: source-catalogue-template
-title: Source Catalogue Template
+title: Source Catalog Template
 description: "Structured template for cataloguing research sources with full bibliographic metadata"
 tags: [Production, Customer-Facing, Citations, Research]
 connections:
@@ -12,13 +12,13 @@ metadata:
   format: markdown
 ---
 
-## Source Catalogue Template
+## Source Catalog Template
 
-Use this template to maintain a structured record of all sources collected during your research. Fill in each entry with complete bibliographic metadata. This catalogue serves as the master record from which bibliographies and citation lists are generated.
+Use this template to maintain a structured record of all sources collected during your research. Fill in each entry with complete bibliographic metadata. This catalog serves as the master record from which bibliographies and citation lists are generated.
 
 ---
 
-# Source Catalogue
+# Source Catalog
 
 **Project:** [Research project title]
 **Researcher:** [Your name]
@@ -28,7 +28,7 @@ Use this template to maintain a structured record of all sources collected durin
 
 ---
 
-## Catalogue Summary
+## Catalog Summary
 
 | Source Type | Count |
 |-------------|-------|

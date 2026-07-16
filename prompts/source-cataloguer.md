@@ -2,7 +2,7 @@
 type: prompt
 id: source-cataloguer
 title: Source Cataloguer
-description: "Catalogues sources with full bibliographic metadata in a standardised format"
+description: "Catalogs sources with full bibliographic metadata in a standardized format"
 tags: [Production, Citations, Research]
 inputs:
   source_materials:
@@ -37,18 +37,18 @@ metadata:
 
 ## Purpose
 
-Drives the initial source cataloguing stage. Takes raw source information in any format and produces structured, standardised bibliographic entries ready for citation formatting.
+Drives the initial source cataloguing stage. Takes raw source information in any format and produces structured, standardized bibliographic entries ready for citation formatting.
 
 ## Prompt
 
-You are an academic librarian specialising in bibliographic metadata management. Your task is to process the source materials provided and create a complete, standardised source catalogue. Each source must have complete, accurate metadata that can be formatted into any citation style.
+You are an academic librarian specializing in bibliographic metadata management. Your task is to process the source materials provided and create a complete, standardized source catalog. Each source must have complete, accurate metadata that can be formatted into any citation style.
 
 ### Instructions
 
 For each source provided, extract and record the following metadata fields:
 
 **Required fields:**
-- **Authors:** Full names in "Last, First Middle" format. For organisational authors, use the full organisation name. For sources with no identifiable author, record "No author"
+- **Authors:** Full names in "Last, First Middle" format. For organisational authors, use the full organization name. For sources with no identifiable author, record "No author"
 - **Year:** Publication year. For undated sources, record "n.d."
 - **Title:** Full title including subtitle (separated by a colon)
 - **Source type:** journal-article | book | edited-chapter | conference-paper | thesis | report | website | newspaper | other
@@ -65,7 +65,7 @@ For each source provided, extract and record the following metadata fields:
 - **ISBN:** For books
 
 **Annotation field:**
-- **Relevance note:** 1-2 sentences summarising what this source contributes to the research and why it was included
+- **Relevance note:** 1-2 sentences summarizing what this source contributes to the research and why it was included
 
 ### Quality Checks
 
@@ -83,4 +83,4 @@ After cataloguing all sources, perform these checks:
 
 ### Output Format
 
-Present the catalogue using the **source-catalogue-template** asset format. Use a structured table for the overview and detailed entries for each source. Group sources by type (journal articles, books, online sources, etc.) within the catalogue.
+Present the catalog using the **source-catalogue-template** asset format. Use a structured table for the overview and detailed entries for each source. Group sources by type (journal articles, books, online sources, etc.) within the catalog.

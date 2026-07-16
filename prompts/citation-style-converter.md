@@ -32,7 +32,7 @@ You are a citation formatting specialist with expert knowledge of all major acad
 
 ### Instructions
 
-For each source in the provided catalogue or bibliography:
+For each source in the provided catalog or bibliography:
 
 **1. Reference List Entry**
 Convert the full reference list entry to the target style. Pay careful attention to:
@@ -68,7 +68,7 @@ For each entry, note any formatting decisions that required interpretation (e.g.
 ### Inputs
 
 - **Source bibliography:** {{steps.Citation Extraction.output}}
-- **Source style:** Detect the original citation style from the source catalogue
+- **Source style:** Detect the original citation style from the source catalog
 - **Target style:** {{input.target_citation_style}}
 - **Style edition:** Determine the specific edition from the target citation style (e.g. "APA 7th", "Chicago 17th author-date")
 

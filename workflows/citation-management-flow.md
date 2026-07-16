@@ -67,17 +67,17 @@ This workflow manages the complete citation lifecycle for academic writing proje
 
 **Input:** Raw source materials (PDFs, URLs, database records, book details), the **source-catalogue-template** asset
 
-Invoke the **citation-extraction** skill via the **source-cataloguer** prompt. Extract structured bibliographic metadata from each source and compile it into a standardised catalogue. Each entry captures: authors, title, year, publication venue, volume, issue, pages, DOI, URL, access date, source type (journal article, book, chapter, conference paper, thesis, report, website), and a brief annotation summarising relevance to the research.
+Invoke the **citation-extraction** skill via the **source-cataloguer** prompt. Extract structured bibliographic metadata from each source and compile it into a standardized catalog. Each entry captures: authors, title, year, publication venue, volume, issue, pages, DOI, URL, access date, source type (journal article, book, chapter, conference paper, thesis, report, website), and a brief annotation summarizing relevance to the research.
 
-**Output:** Complete source catalogue with standardised metadata for all sources.
+**Output:** Complete source catalog with standardized metadata for all sources.
 
-**Checkpoint:** Review the catalogue for completeness and accuracy. Verify DOIs resolve correctly. Flag any sources with incomplete metadata (missing author, year, or publication details) for manual completion.
+**Checkpoint:** Review the catalog for completeness and accuracy. Verify DOIs resolve correctly. Flag any sources with incomplete metadata (missing author, year, or publication details) for manual completion.
 
 ### Stage 2: Citation Style Conversion
 
-**Input:** Source catalogue from Stage 1, target citation style, manuscript text (if available)
+**Input:** Source catalog from Stage 1, target citation style, manuscript text (if available)
 
-Invoke the **bibliography-formatting** skill via the **citation-style-converter** prompt. Convert all catalogue entries into the target citation style, producing both in-text citation forms and full reference list entries. If the researcher needs to switch styles (e.g., submitting to a different journal), this stage can be re-run with a new target style.
+Invoke the **bibliography-formatting** skill via the **citation-style-converter** prompt. Convert all catalog entries into the target citation style, producing both in-text citation forms and full reference list entries. If the researcher needs to switch styles (e.g., submitting to a different journal), this stage can be re-run with a new target style.
 
 **Output:** Formatted citations in the target style — both in-text and reference list forms for each source.
 
@@ -95,7 +95,7 @@ Invoke the **citation-extraction** skill via the **in-text-citation-checker** pr
 
 ### Stage 4: Bibliography Generation
 
-**Input:** Validated source catalogue, target citation style, list of sources actually cited in the manuscript
+**Input:** Validated source catalog, target citation style, list of sources actually cited in the manuscript
 
 Invoke the **bibliography-formatting** skill via the **bibliography-generator** prompt. Produce a final, formatted bibliography ready for inclusion in the manuscript. Ensure correct alphabetical ordering (or numerical ordering for numbered styles), hanging indentation, and consistent formatting throughout.
 
@@ -105,9 +105,9 @@ Invoke the **bibliography-formatting** skill via the **bibliography-generator** 
 
 ### Stage 5: Citation Gap Analysis
 
-**Input:** Manuscript text, source catalogue, research questions, field of study
+**Input:** Manuscript text, source catalog, research questions, field of study
 
-Invoke the **citation-extraction** skill via the **citation-gap-analyser** prompt. Analyse the citation coverage of the manuscript to identify weaknesses in the source base.
+Invoke the **citation-extraction** skill via the **citation-gap-analyser** prompt. Analyze the citation coverage of the manuscript to identify weaknesses in the source base.
 
 **Output:** Gap analysis report covering: under-cited claims, over-reliance on single sources, temporal coverage gaps, geographic or methodological diversity gaps, and missing seminal works.
 
@@ -119,17 +119,17 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 - If a citation style has conflicting rules across different editions, default to the most recent edition and note the version used
 - If the manuscript uses inconsistent citation formatting (mixing styles), identify the dominant style and flag all deviations
 - If DOIs do not resolve, retain them but flag for verification — they may contain transcription errors
-- If the gap analysis identifies more than 10 critical gaps, prioritise by severity and recommend addressing the top 5 before submission
+- If the gap analysis identifies more than 10 critical gaps, prioritize by severity and recommend addressing the top 5 before submission
 
 ## Inputs
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.source_materials}}` | Yes | The sources or source metadata you want to catalogue and cite | `PDFs, URLs, DOI list, or bibliography export` |
+| `{{input.source_materials}}` | Yes | The sources or source metadata you want to catalog and cite | `PDFs, URLs, DOI list, or bibliography export` |
 | `{{input.target_citation_style}}` | Yes | The citation format you need to produce | `APA 7th edition` |
 | `{{input.manuscript_text}}` | No | Draft manuscript text to validate in-text citations against | `Paste your draft introduction and literature review` |
 | `{{input.research_topic}}` | No | The research topic these sources relate to | `Impact of social media on adolescent mental health` |
-| `{{input.source_count}}` | No | Approximate number of sources to catalogue | `25` |
+| `{{input.source_count}}` | No | Approximate number of sources to catalog | `25` |
 | `{{input.research_field}}` | No | The academic field or discipline of the manuscript | `Psychology` |
 | `{{input.manuscript_authors}}` | No | Names of the manuscript authors for self-citation analysis | `Smith, J. and Jones, A.` |
 
@@ -137,7 +137,7 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 
 | Name | Description |
 |------|-------------|
-| Complete source catalogue | Complete source catalogue with standardised metadata for all sources |
+| Complete source catalog | Complete source catalog with standardized metadata for all sources |
 | Formatted citations in the target style — both in-text and reference list forms for each source | Formatted citations in the target style — both in-text and reference list forms for each source |
 | Validation report listing: matched citations, orphaned in-text citations , unused bibliography entries , and formatting errors | Validation report listing: matched citations, orphaned in-text citations , unused bibliography entries , and formatting errors |
 | Complete, publication-ready bibliography in the target citation style | Complete, publication-ready bibliography in the target citation style |
@@ -148,7 +148,7 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

@@ -22,7 +22,7 @@ Formats bibliographic entries and in-text citations according to the precise rul
 
 - Formatting a bibliography for journal submission in a specific citation style
 - Converting an existing bibliography from one style to another (e.g., APA to Chicago for a different journal)
-- Generating in-text citation forms for sources in the catalogue
+- Generating in-text citation forms for sources in the catalog
 - Checking existing citations against the rules of the target style
 - Formatting edge cases: sources with unusual authorship, untranslated titles, retracted articles
 

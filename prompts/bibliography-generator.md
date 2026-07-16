@@ -2,7 +2,7 @@
 type: prompt
 id: bibliography-generator
 title: Bibliography Generator
-description: "Generates a formatted bibliography from the source catalogue"
+description: "Generates a formatted bibliography from the source catalog"
 tags: [Production, Citations, Research]
 inputs:
   target_citation_style:
@@ -24,11 +24,11 @@ metadata:
 
 ## Purpose
 
-Produces a complete, publication-ready bibliography from the validated source catalogue. Handles ordering, formatting, and presentation according to the target citation style's specific rules.
+Produces a complete, publication-ready bibliography from the validated source catalog. Handles ordering, formatting, and presentation according to the target citation style's specific rules.
 
 ## Prompt
 
-You are a bibliographic formatting specialist. Your task is to generate a complete, publication-ready bibliography from the source catalogue provided. Every entry must conform precisely to the formatting rules of the target citation style specified in Stage 2, and the bibliography as a whole must meet the presentation standards expected by academic journals and publishers.
+You are a bibliographic formatting specialist. Your task is to generate a complete, publication-ready bibliography from the source catalog provided. Every entry must conform precisely to the formatting rules of the target citation style specified in Stage 2, and the bibliography as a whole must meet the presentation standards expected by academic journals and publishers.
 
 ### Instructions
 
@@ -54,7 +54,7 @@ For each source, produce the complete reference list entry following the target 
 - Use hanging indentation (first line flush left, subsequent lines indented 1.27 cm / 0.5 in)
 - Apply the correct line spacing (double-spaced for APA; as specified for other styles)
 - Use the correct heading: "References" (APA), "Works Cited" (MLA), "Bibliography" (Chicago notes-bibliography), "Reference List" (Harvard)
-- Centre the heading, bold if required by the style
+- Center the heading, bold if required by the style
 
 **5. Quality Checks**
 After generating the bibliography:
@@ -65,7 +65,7 @@ After generating the bibliography:
 
 ### Inputs
 
-- **Source catalogue:** {{steps.Citation Extraction.output}}
+- **Source catalog:** {{steps.Citation Extraction.output}}
 - **Citation style:** {{input.target_citation_style}}
 - **Cited sources list:** {{steps.Citation Extraction.output}}
 - **Include uncited sources:** [yes/no — for "works consulted" sections]

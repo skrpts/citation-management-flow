@@ -37,7 +37,7 @@ Only cite sources you have actually read. If you encounter a finding in Source A
 #### Cite Accurately
 Ensure that every citation accurately represents the cited source's claims. Common accuracy errors include:
 - Overstating the certainty of a finding ("Smith proved that..." when Smith reported a preliminary association)
-- Generalising beyond the source's scope (citing a study of university students as evidence about "people in general")
+- Generalizing beyond the source's scope (citing a study of university students as evidence about "people in general")
 - Cherry-picking: citing only the results that support your argument while ignoring contradictory findings from the same source
 
 #### Cite Sufficiently
