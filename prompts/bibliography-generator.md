@@ -11,6 +11,11 @@ inputs:
     example: "Harvard"
     required: true
     type: text
+context_params:
+  source_catalogue:
+    label: "Source Catalogue"
+    description: "The validated source catalogue to assemble into the final bibliography."
+    required: false
 connections:
   - target: bibliography-formatting
     type: derived_from
@@ -65,9 +70,9 @@ After generating the bibliography:
 
 ### Inputs
 
-- **Source catalog:** {{steps.Citation Extraction.output}}
+- **Source catalog:** {{step.context.source_catalogue}}
 - **Citation style:** {{input.target_citation_style}}
-- **Cited sources list:** {{steps.Citation Extraction.output}}
+- **Cited sources list:** {{step.context.source_catalogue}}
 - **Include uncited sources:** [yes/no — for "works consulted" sections]
 
 ### Output Format

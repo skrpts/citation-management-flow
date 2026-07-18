@@ -11,6 +11,12 @@ connections:
     type: uses
   - target: source-summarisation
     type: uses
+  - target: in-text-citation-validation
+    type: uses
+  - target: citation-gap-analysis
+    type: uses
+  - target: bibliography-generation
+    type: uses
   - target: language-polish
     type: uses
   - target: llm-service
@@ -29,6 +35,9 @@ composite_steps:
   - "citation-extraction"
   - "bibliography-formatting"
   - "source-summarisation"
+  - "in-text-citation-validation"
+  - "citation-gap-analysis"
+  - "bibliography-generation"
   - "source-catalogue-template"
   - "language-polish"
 execution:
@@ -38,10 +47,6 @@ execution:
     output: { name: "source_catalogue", type: "list" }
     context:
       citation_style: "Harvard"
-  - skill: "bibliography-formatting"
-    step_type: "synthesis"
-    prompt: "citation-style-converter"
-    output: { name: "bibliography", type: "text" }
   - skill: "source-summarisation"
     prompt: "summarise-source"
     step_type: "synthesis"
@@ -49,12 +54,44 @@ execution:
     bindings:
       source_text:
         from_input: "source_materials"
+  - skill: "bibliography-formatting"
+    step_type: "synthesis"
+    prompt: "citation-style-converter"
+    output: { name: "bibliography", type: "text" }
+  - skill: "in-text-citation-validation"
+    prompt: "in-text-citation-checker"
+    step_type: "validation"
+    output: { name: "validation_report", type: "text" }
+    bindings:
+      bibliography:
+        from_step: "Bibliography Formatting"
+        field: output
+  - skill: "citation-gap-analysis"
+    prompt: "citation-gap-analyser"
+    step_type: "validation"
+    output: { name: "gap_report", type: "text" }
+    bindings:
+      document:
+        from_step: "In-Text Citation Validation"
+        field: output
+  - skill: "bibliography-generation"
+    prompt: "bibliography-generator"
+    step_type: "synthesis"
+    output: { name: "final_bibliography", type: "text" }
+    bindings:
+      source_catalogue:
+        from_step: "Citation Extraction"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Bibliography Generation"
+        field: output
 ---
 
 ## Overview

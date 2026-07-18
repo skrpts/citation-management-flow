@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.26
+GH#863 Wave 1 (batch 2, #858-A1 class) — fix the intent/output mismatch (K-045): the bundle shipped `in-text-citation-checker`, `citation-gap-analyser`, and `bibliography-generator` prompts and the docs described running them, but the `execution:` block never did — so the skrpt emitted a polished intermediate (the source summaries) instead of the promised publication-ready bibliography. Restored the intended bound graph: added three producer steps — **In-Text Citation Validation**, **Citation Gap Analysis**, and **Bibliography Generation** — each with a backing skill so it is `from_step`-addressable, ordered `Citation Extraction → Source Summarisation → Bibliography Formatting → In-Text Citation Validation → Citation Gap Analysis → Bibliography Generation`. Rewired the wired prompts' cross-step refs from positional/title `{{steps.<Title>.output}}` and `{{steps.previous.output}}` to explicit `from_step` bindings via `{{step.context.*}}` context params. Completed the tail: repinned `polish-language` 1.0.1→1.0.6 (the version exposing the bindable `source` slot) and bound `language-polish`'s `source` ← the Bibliography Generation output, so the `output_step` polishes the actual deliverable (the final bibliography) rather than its positional previous. No new required inputs.
+
 ## v1.1.25
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

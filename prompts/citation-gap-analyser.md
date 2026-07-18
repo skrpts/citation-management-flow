@@ -4,6 +4,12 @@ id: citation-gap-analyser
 title: Citation Gap Analyser
 description: "Identifies missing citations, uncited claims, and reference gaps in a document"
 tags: [Production, Academic]
+context_params:
+  document:
+    label: "Validated Document"
+    description: "The validated manuscript and citation report to assess for coverage gaps."
+    required: false
+    default_from_previous: true
 connections:
   - target: citation-extraction
     type: derived_from
@@ -22,7 +28,7 @@ You are a citation analyst. Review the document below and identify gaps in its c
 
 ### Document
 
-{{steps.previous.output}}
+{{step.context.document}}
 
 ### Instructions
 

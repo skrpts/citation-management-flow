@@ -18,6 +18,12 @@ inputs:
     example: "Harvard"
     required: true
     type: text
+context_params:
+  bibliography:
+    label: "Formatted Bibliography"
+    description: "The formatted bibliography to validate in-text citations against."
+    required: false
+    default_from_previous: true
 connections:
   - target: citation-extraction
     type: derived_from
@@ -85,7 +91,7 @@ Flag these frequent mistakes:
 ### Inputs
 
 - **Manuscript text:** {{input.manuscript_text}}
-- **Bibliography:** {{steps.Bibliography Formatting.output}}
+- **Bibliography:** {{step.context.bibliography}}
 - **Citation style:** {{input.target_citation_style}}
 
 ### Output Format
