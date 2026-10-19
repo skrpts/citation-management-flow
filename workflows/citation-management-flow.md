@@ -169,6 +169,7 @@ Invoke the **citation-extraction** skill via the **citation-gap-analyser** promp
 | `{{input.source_count}}` | No | Approximate number of sources to catalog | `25` |
 | `{{input.research_field}}` | No | The academic field or discipline of the manuscript | `Psychology` |
 | `{{input.manuscript_authors}}` | No | Names of the manuscript authors for self-citation analysis | `Smith, J. and Jones, A.` |
+| `{{input.research_question}}` | Yes | The specific research question to address | `How does sleep duration affect cognitive performance in university students?` |
 
 ## Outputs
 
